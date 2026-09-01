@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Informe Ejecutivo - Squad Entretenimiento</title>
+
+<style>
+
+body{
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#f5f7fb;
+    margin:0;
+    padding:30px;
+    color:#222;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+h1{
+    color:#172b4d;
+}
+
+h2{
+    color:#0052cc;
+    margin-top:40px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.card{
+    background:white;
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.status-red{
+    color:#d32f2f;
+    font-weight:bold;
+}
+
+.status-yellow{
+    color:#f9a825;
+    font-weight:bold;
+}
+
+.status-green{
+    color:#2e7d32;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    margin-top:15px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th{
+    background:#0052cc;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+.chart-row{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.chart-row span{
+    width:220px;
+    font-weight:600;
+}
+
+.progress{
+    flex:1;
+    height:30px;
+    background:#e3e8f0;
+    border-radius:25px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    color:white;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width:60px;
+}
+
+.azul{
+    background:#0052cc;
+}
+
+.celeste{
+    background:#00acc1;
+}
+
+.naranja{
+    background:#ff7043;
+}
+
+.violeta{
+    background:#7e57c2;
+}
+
+.rojo{
+    background:#ef5350;
+}
+
+.verde{
+    background:#43a047;
+}
+
+.gris{
+    background:#607d8b;
+}
+
+.risk{
+    background:#fff4e5;
+    border-left:5px solid orange;
+    padding:15px;
+    margin-top:15px;
+}
+
+.executive{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.kpi{
+    flex:1;
+    min-width:220px;
+    background:white;
+    padding:20px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.kpi h3{
+    margin:0;
+    color:#0052cc;
+    font-size:36px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎯 Informe Ejecutivo - Squad Entretenimiento</h1>
+
+<p>
+Análisis de iniciativas, épicas, historias, defectos y pruebas E2E.
+</p>
+
+<h2>📊 Estado General</h2>
+
+<div class="card-grid">
+
+    <div class="card">
+        <h3>Migración OPEN → FAN</h3>
+        <p class="status-red">🔴 Principal foco del squad</p>
+    </div>
+
+    <div class="card">
+        <h3>Pruebas E2E</h3>
+        <p class="status-yellow">🟡 Muy demandante</p>
+    </div>
+
+    <div class="card">
+        <h3>Defectos CRM Salesforce</h3>
+        <p class="status-yellow">🟡 Activos</p>
+    </div>
+
+    <div class="card">
+        <h3>Automatización QA</h3>
+        <p class="status-green">🟢 Avanzando</p>
+    </div>
+
+    <div class="card">
+        <h3>Recupero Equipos</h3>
+        <p class="status-red">🔴 Con incidencias</p>
+    </div>
+
+    <div class="card">
+        <h3>Gestión de Citas</h3>
+        <p class="status-yellow">🟡 En evolución</p>
+    </div>
+
+</div>
+
+<h2>📈 Distribución Temática</h2>
+
+<div class="chart-row">
+    <span>OPEN → FAN</span>
+    <div class="progress">
+        <div class="fill azul" style="width:45%">45%</div>
+    </div>
+</div>
+
+<div class="chart-row">
+    <span>Pruebas E2E</span>
+    <div class="progress">
+        <div class="fill celeste" style="width:25%">25%</div>
+    </div>
+</div>
+
+<div class="chart-row">
+    <span>Defectos CRM</span>
+    <div class="progress">
+        <div class="fill naranja" style="width:15%">15%</div>
+    </div>
+</div>
+
+<div class="chart-row">
+    <span>Gestión de Citas</span>
+    <div class="progress">
+        <div class="fill violeta" style="width:8%">8%</div>
+    </div>
+</div>
+
+<div class="chart-row">
+    <span>Recupero Equipos</span>
+    <div class="progress">
+        <div class="fill rojo" style="width:5%">5%</div>
+    </div>
+</div>
+
+<div class="chart-row">
+    <span>Automatización QA</span>
+    <div class="progress">
+        <div class="fill verde" style="width:3%">3%</div>
+    </div>
+</div>
+
+<div class="chart-row">
+    <span>OTTs / Flow</span>
+    <div class="progress">
+        <div class="fill gris" style="width:2%">2%</div>
+    </div>
+</div>
+
+<h2>🚀 Iniciativas Principales</h2>
+
+<table>
+
+<tr>
+<th>Épica</th>
+<th>Estado</th>
+<th>Prioridad</th>
+</tr>
+
+<tr>
+<td>Migración FAN Uruguay</td>
+<td>En progreso</td>
+<td>P1</td>
+</tr>
+
+<tr>
+<td>Migración FAN Argentina</td>
+<td>En progreso</td>
+<td>P2</td>
+</tr>
+
+<tr>
+<td>Pruebas E2E Open UY/AR</td>
+<td>Backlog / Testing</td>
+<td>P0</td>
+</tr>
+
+</table>
+
+<h3>Historias Asociadas</h3>
+
+<ul>
+<li>Cambio de Plan</li>
+<li>Pedido de Baja</li>
+<li>Recalculo</li>
+<li>Nuevos SubType</li>
+<li>Venta HFC / FTTH</li>
+<li>Cargos de Instalación</li>
+<li>Gestión de Citas</li>
+</ul>
+
+<div class="risk">
+<b>Riesgo:</b> 🔴 Alto<br><br>
+Historias distribuidas entre Refinement, Backlog e In Progress.
+</div>
+
+<h2>🧪 Frente de Testing</h2>
+
+<div class="executive">
+
+<div class="kpi">
+<h3>18+</h3>
+<p>Casos Passed</p>
+</div>
+
+<div class="kpi">
+<h3>Alto
